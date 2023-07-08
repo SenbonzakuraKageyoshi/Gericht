@@ -71,10 +71,14 @@
     .menu__list-link{
         height: 400px;
     }
-}
 
-@media (max-width: 1140px){
     .menu__list{
         margin-top: 32px;
+    }
+}
+
+@media(max-width: 768px){
+    .section-menu{
+        padding: 50px 0px;
     }
 }

@@ -99,6 +99,12 @@
     }
 }
 
+@media(max-width: 768px){
+    .section-chef{
+        padding: 50px 0px;
+    }
+}
+
 @media (max-width: 490px){
     .section-chef-image{
         width: 290px;

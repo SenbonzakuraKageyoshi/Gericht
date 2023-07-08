@@ -10,6 +10,8 @@
 @import './section-special.css';
 @import './section-chef.css';
 @import './section-hours.css';
+@import './section-reviews.css';
+@import './section-rewards.css';
 
 h1, h2, h3, h4, h5, button, a{
     font-family: 'Cormorant Upright';
@@ -20,7 +22,7 @@ p, div, input, span{
 }
 
 p{
-    color: #AAA
+    color: var(--gray);
 }
 
 .link-styled{

@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="description" name="description" content="Gericht - Restoraunt"> 
+    <meta itemprop="keywords" name="keywords" content="Gericht,Restoraunt,Dining,Vine,Conctails,Beer">
+    <meta name="author" content="MarkWebDev">
+    <meta name="robots" content="index">
+
+    <link rel="icon" href="">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Gericht</title>
+
+    <meta property="og:title" content="Gericht">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gericht.com">
+    <meta property="og:description" content="Gericht - Restoraunt">
+    <title itemprop="headline">Gericht</title>
 </head>
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "Gericht",
+    "url" : "https://gericht.com",
+    "sameAs" : [
+    "https://vk.com/Gericht",
+    "https://www.pinterest.com/Gericht",
+    "https://www.facebook.com/Gericht",
+    "https://twitter.com/Gericht"
+    ]
+}
+</script>
 <body>
     <section class="section-top">
         <header class="header">
@@ -236,7 +262,115 @@
     </section>
     <section class="section-reviews">
         <div class="container-md">
-            
+            <div class="section-header">
+                <h4 class="subtitle">
+                    Testimony
+                    <img src="./assets/images/subtitle-decoration.svg" width="40" height="9" alt="Subtitle Decoration" class="subtitle-decoration">
+                </h4>
+                <div class="title">Happy customers</div>
+            </div>
+            <ul class="reviews-list">
+                <li class="reviews-list__item">
+                    <div class="reviews-list__item__wrapper">
+                        <img src="./assets/images/blockquotes.svg" class="blockquotes" width="47" height="40" alt="Blockquotes">
+                        <img src="./assets/images/review-author.png" width="190" height="190" alt="Review author" class="reviews-list__item__image">
+                    </div>
+                    <div class="reviews-list__item__main">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+                        </blockquote>
+                        <div class="reviews-list__item__author">Wade Warren</div>
+                        <div class="reviews-list__item__profession">Sommelier</div>
+                    </div>
+                </li>
+                <li class="reviews-list__item">
+                    <div class="reviews-list__item__wrapper">
+                        <img src="./assets/images/blockquotes.svg" class="blockquotes" width="47" height="40" alt="Blockquotes">
+                        <img src="./assets/images/review-author.png" width="190" height="190" alt="Review author" class="reviews-list__item__image">
+                    </div>
+                    <div class="reviews-list__item__main">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+                        </blockquote>
+                        <div class="reviews-list__item__author">Wade Warren</div>
+                        <div class="reviews-list__item__profession">Sommelier</div>
+                    </div>
+                </li>
+                <li class="reviews-list__item">
+                    <div class="reviews-list__item__wrapper">
+                        <img src="./assets/images/blockquotes.svg" class="blockquotes" width="47" height="40" alt="Blockquotes">
+                        <img src="./assets/images/review-author.png" width="190" height="190" alt="Review author" class="reviews-list__item__image">
+                    </div>
+                    <div class="reviews-list__item__main">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+                        </blockquote>
+                        <div class="reviews-list__item__author">Wade Warren</div>
+                        <div class="reviews-list__item__profession">Sommelier</div>
+                    </div>
+                </li>
+                <li class="reviews-list__item">
+                    <div class="reviews-list__item__wrapper">
+                        <img src="./assets/images/blockquotes.svg" class="blockquotes" width="47" height="40" alt="Blockquotes">
+                        <img src="./assets/images/review-author.png" width="190" height="190" alt="Review author" class="reviews-list__item__image">
+                    </div>
+                    <div class="reviews-list__item__main">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+                        </blockquote>
+                        <div class="reviews-list__item__author">Wade Warren</div>
+                        <div class="reviews-list__item__profession">Sommelier</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-rewards">
+        <div class="container-md">
+            <div class="section-rewards__content">
+                <div class="section-rewards__content__left">
+                    <div class="section-header">
+                        <h4 class="subtitle">
+                            Awards & recognition
+                            <img src="./assets/images/subtitle-decoration.svg" width="40" height="9" alt="Subtitle Decoration" class="subtitle-decoration">
+                        </h4>
+                        <div class="title">Our Laurelss</div>
+                    </div>
+                    <ul class="awards-list">
+                        <li class="awards-list__item">
+                            <img class="awards-list__item__number" width="79" height="79" src="./assets/images/awards1.svg" alt="Award Number">
+                            <div class="awards-list__item__main">
+                                <h3 class="awards-list__item__name">Rising Star</h3>
+                                <p class="awards-list__item__descr">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-list__item">
+                            <img class="awards-list__item__number" width="79" height="79" src="./assets/images/awards1.svg" alt="Award Number">
+                            <div class="awards-list__item__main">
+                                <h3 class="awards-list__item__name">Rising Star</h3>
+                                <p class="awards-list__item__descr">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-list__item">
+                            <img class="awards-list__item__number" width="79" height="79" src="./assets/images/awards1.svg" alt="Award Number">
+                            <div class="awards-list__item__main">
+                                <h3 class="awards-list__item__name">Rising Star</h3>
+                                <p class="awards-list__item__descr">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-list__item">
+                            <img class="awards-list__item__number" width="79" height="79" src="./assets/images/awards1.svg" alt="Award Number">
+                            <div class="awards-list__item__main">
+                                <h3 class="awards-list__item__name">Rising Star</h3>
+                                <p class="awards-list__item__descr">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-rewards__content__right">
+                    <img class="section-rewards__image" src="./assets/images/section-reward-img.png" width="555" height="691" alt="Sectoin Rewards Image">
+                </div>
+            </div>
         </div>
     </section>
     <script src="./assets/js/script.js"></script>
