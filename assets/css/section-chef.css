@@ -1,0 +1,111 @@
+.section-chef__main{
+    max-width: 570px;
+}
+
+.section-chef__main blockquote{
+    color: var(--gray);
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+}
+
+.chef-name{
+    color: var(--gold);
+    font-size: 32px;
+    font-family: 'Cormorant Upright';
+    line-height: 130%;
+    letter-spacing: 1.28px;
+    text-transform: capitalize;
+    margin-top: 64px;
+}
+
+.chef-profession{
+    color: var(--gray);
+    font-size: 16px;
+    font-family: 'Open Sans';
+    line-height: 175%;
+    letter-spacing: 0.64px;
+}
+
+.chef-autograph{
+    margin-top: 64px;
+}
+
+.section-chef__content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.section-chef{
+    padding: 150px 0px;
+    background: url(../images/section-about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-chef .image-rectangle{
+    z-index: 1;
+}
+
+@media (max-width: 1340px){
+    .section-chef-image{
+        width: 380px;
+        height: 450px;
+    }
+
+    .section-chef .image-rectangle:before{
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-chef .image-rectangle::after{
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-chef__main{
+        max-width: 400px;
+    }
+
+    .section-chef__content{
+        align-items: center;
+        justify-content: space-around   ;
+    }
+}
+
+@media (max-width: 885px){
+    .section-chef__content{
+       flex-direction: column;
+    }
+
+    .section-chef__main{
+        margin-top: 40px;
+    }
+
+    .section-chef__main .title{
+        font-size: 45px;
+        line-height: 48px;
+    }
+
+    .section-chef__main blockquote {
+        font-size: 12px;
+    }
+
+    .chef-name, .chef-autograph{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 490px){
+    .section-chef-image{
+        width: 290px;
+        height: 360px;
+    }
+
+    .section-chef{
+        padding: 70px 0px;
+    }
+}

@@ -1,0 +1,119 @@
+.section-top{
+    overflow: hidden;
+    padding-bottom: 240px;
+}
+
+.section-top__content{
+    margin-top: 48px !important;
+}
+
+.section-top__intro__main{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.section-top.visible .section-top__intro__main{
+    opacity: 1;
+}
+
+.section-top__title{
+    max-width: 453px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 3.6px;
+    text-transform: capitalize;
+}
+
+.section-top__descr{
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    margin-top: 30px;
+    max-width: 453px;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    ;
+}
+
+.section-top__content .link-styled{
+    margin-top: 30px;
+}
+
+.section-top__intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1180px){
+    .section-top__intro-image{
+        width: 450px;
+        height: 420px;
+    }
+
+    .section-top__intro .image-rectangle:before{
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-top__intro .image-rectangle::after{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 885px){
+    .section-top{
+        padding-bottom: 150px;
+    }
+
+    .section-top__title{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 105%;
+    }
+
+    .section-top__intro{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-top__intro .subtitle{
+        align-items: center;
+    }
+
+    .section-top__intro .image-rectangle{
+        margin-top: 40px;
+    }
+
+    .section-top__intro .link-styled{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 490px){
+    .section-top{
+        padding-bottom: 20px;
+    }
+
+    .section-top__content{
+        margin-top: 20px;
+    }
+
+    .section-top__intro-image{
+        width: 300px;
+        height: 340px;
+    }
+
+    .section-top__intro .image-rectangle:before{
+        width: 180px;
+        height: 180px;
+    }
+
+    .section-top__intro .image-rectangle::after{
+        width: 180px;
+        height: 180px;
+    }
+}

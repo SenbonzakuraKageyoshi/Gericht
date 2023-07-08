@@ -1,0 +1,50 @@
+.nav__link{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    position: relative;
+    transition: color 0.4s;
+}
+
+.nav__link:hover{
+    color: var(--gold);
+}
+
+.nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--gold);
+    transition: width 0.4s;
+    bottom: -5px;
+}
+
+.nav__link:hover::before{
+    width: 100%;
+}
+
+.nav__link:not(:first-child){
+    margin-left: 30px;
+}
+
+.header{
+    padding: 15px 0px;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 885px){
+    .reservation, .header__nav{
+        display: none;
+    }
+    
+    .header__content{
+        align-items: flex-start;
+    }
+}

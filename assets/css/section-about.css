@@ -1,0 +1,133 @@
+.section-about{
+    background: url(../images/section-about.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 125px 0px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.section-about__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.section-about__item{
+    max-width: 523px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about__item:first-child{
+    align-items: flex-end;
+}
+
+.section-about__item .subtitle{
+    font-family: 'Cormorant Upright';
+}
+
+.section-about__item .link-styled{
+    margin-top: 32px;
+}
+
+.section-about__item .subtitle{
+    font-size: 64px;
+    color: var(--gold);
+}
+
+.section-about__item:first-child .subtitle{
+    align-items: flex-end;
+    font-size: 64px;
+    color: var(--gold);
+}
+
+.section-about__item:first-child .subtitle img{
+    transform: rotateY(-180deg);
+}
+
+.section-about__item-descr{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    margin-top: 32px;
+}
+
+.section-about__item:first-child .section-about__item-descr{
+    text-align: right;
+}
+
+.section-about-decoration{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.section-about__item{
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.section-about .section-about__item:first-child{
+    transform: translateX(-400px);
+}
+
+.section-about .section-about__item:last-child{
+    transform: translateX(400px);
+}
+
+.section-about-image{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.section-about.visible .section-about__item:first-child{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section-about.visible .section-about__item:last-child{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section-about.visible .section-about-image{
+    opacity: 1;
+}
+
+@media(max-width: 1180px){
+    .section-about__content{
+        flex-direction: column;
+    }
+
+    .section-about-image{
+        height: 503px;
+        width: 53px;
+    }
+}
+
+@media(max-width: 490px){
+    .section-about__item .subtitle{
+        font-size: 50px;
+    }
+
+    .section-about__item .section-about__item-descr{
+        margin-top: 15px;
+    }
+
+    .section-about__item .link-styled{
+        margin-top: 15px;
+    }
+
+    .section-about-decoration{
+        width: 290px;
+        height: 315px;
+    }
+}

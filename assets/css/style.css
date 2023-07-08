@@ -1,0 +1,117 @@
+@import './vendors/normalize.css';
+@import './vendors/typography.css';
+@import './vendors/vars.css';
+
+@import './header.css';
+@import './section-top.css';
+@import './menu.css';
+@import './section-about.css';
+@import './section-menu.css';
+@import './section-special.css';
+@import './section-chef.css';
+@import './section-hours.css';
+
+h1, h2, h3, h4, h5, button, a{
+    font-family: 'Cormorant Upright';
+}
+
+p, div, input, span{
+    font-family: 'Open Sans';
+}
+
+p{
+    color: #AAA
+}
+
+.link-styled{
+    width: 157px;
+    height: 44px;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0C0B08;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    transition: background-color 0.4s;
+}
+
+.link-styled:hover{
+    background-color: var(--white);
+}
+
+.image-rectangle{
+    position: relative;
+}
+
+.image-rectangle::after{
+    content: '';
+    width: 435px;
+    height: 435px;
+    background-color: var(--gold);
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+}
+
+.image-rectangle::before{
+    content: '';
+    width: 435px;
+    height: 435px;
+    background-color: var(--gold);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: -1;
+}
+
+.golden{
+    color: var(--gold);
+}
+
+.title{
+    font-family: 'Cormorant Upright';
+    color: var(--gold);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83px;
+    letter-spacing: 0.04em;
+}
+
+.subtitle{
+    font-family: 'Cormorant Upright';
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.container-lg{
+    max-width: 1420px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+.container-md{
+    max-width: 1320px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+@media(max-width: 490px){
+    p{
+        font-size: 14px !important;
+    }
+
+    .title{
+        font-size: 50px;
+        line-height: 52px;
+    }
+}
