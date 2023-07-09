@@ -1,9 +1,10 @@
 .section-hours{
     text-align: center;
-    background: url(../images/section-hours.jpg);
+    background: url(../images/jpg/section-hours.jpg);
     background-size: cover;
     background-position: center;
     padding: 330px 0px;
+    background-attachment: fixed;
 }
 
 .section-hours__descr{

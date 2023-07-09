@@ -1,0 +1,7 @@
+.socials__link:not(:first-child){
+    margin-left: 16px;
+}
+
+.socials{
+    margin-top: 16px;
+}

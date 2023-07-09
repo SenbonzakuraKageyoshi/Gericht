@@ -1,0 +1,40 @@
+.section-form{
+    padding: 100px 0px;
+}
+
+.section-form .subtitle{
+    align-items: center;
+}
+
+.section-form__content{
+    border: 1px solid rgba(220, 202, 135, 0.20);
+    background: var(--0-c-0-c-0-c, #0C0C0C);
+    padding: 64px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s;
+}
+
+.section-form.visible .section-form__content{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width: 768px){
+    .section-form{
+        padding: 50px 0px;
+    }
+
+    .section-form__content{
+        padding: 32px 0px;
+    }
+}
+
+@media (max-width: 490px){
+    .title{
+        font-size: 40px !important;
+    }
+}

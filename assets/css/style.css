@@ -2,9 +2,13 @@
 @import './vendors/typography.css';
 @import './vendors/vars.css';
 
-@import './header.css';
+@import './components/form.css';
+@import './components/header.css';
+@import './components/socials.css';
+@import './components/footer.css';
+@import './components/menu.css';
+
 @import './section-top.css';
-@import './menu.css';
 @import './section-about.css';
 @import './section-menu.css';
 @import './section-special.css';
@@ -12,6 +16,7 @@
 @import './section-hours.css';
 @import './section-reviews.css';
 @import './section-rewards.css';
+@import './section-form.css';
 
 h1, h2, h3, h4, h5, button, a{
     font-family: 'Cormorant Upright';

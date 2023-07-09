@@ -4,6 +4,14 @@
 
 .section-menu__header{
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.section-menu.visible .section-menu__header{
+    opacity: 1;
+    visibility: visible;
 }
 
 .section-menu__header .subtitle{
@@ -24,11 +32,24 @@
     margin-left: -32px;
     margin-top: 62px;
     flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.6s;
+}
+
+.section-menu.visible .menu__list{
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu__list li{
     margin-left: 32px;
     margin-top: 32px;
+    width: 412px;
+}
+
+.menu__list li a{
+    width: 412px;
 }
 
 .menu__list-link-name{
@@ -70,6 +91,14 @@
 
     .menu__list-link{
         height: 400px;
+    }
+
+    .menu__list li{
+        width: 300px;
+    }
+    
+    .menu__list li a{
+        width: 300px;
     }
 
     .menu__list{

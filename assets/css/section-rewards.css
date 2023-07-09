@@ -1,8 +1,19 @@
 .section-rewards{
     padding: 128px 0px;
-    background: url(../images/section-about.jpg);
+    background: url(../images/jpg/section-about.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.section-rewards__content__left{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+}
+
+.section-rewards.visible .section-rewards__content__left{
+    opacity: 1;
+    visibility: visible;
 }
 
 .section-rewards .section-header{
@@ -52,8 +63,27 @@
     justify-content: space-between;
 }
 
+@media(max-width: 1350px){
+    .section-rewards__image{
+        width: 320px;
+        height: auto;
+    }
+}
+
 @media(max-width: 768px){
     .section-rewards{
         padding: 50px 0px;
+    }
+
+    .section-rewards__content{
+        flex-direction: column;
+    }
+
+    .section-rewards__content__right{
+        margin-top: 20px;
+    }
+
+    .awards-list{
+        justify-content: center;
     }
 }

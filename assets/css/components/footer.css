@@ -1,0 +1,65 @@
+.footer{
+    padding: 128px 0px;
+}
+
+.footer__content-item{
+    text-align: center;
+    max-width: 438px;
+    width: 100%;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content-item__value{
+    font-family: 'Open Sans';
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+    display: block;
+}
+
+.footer__content-item__name{
+    font-family: 'Cormorant Upright';
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+}
+
+.footer__content-item blockquote{
+    max-width: 438px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.footer__rights{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: var(--gray);
+}
+
+@media(max-width: 1050px){
+    .footer__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__content-item:not(:first-child){
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 768px){
+    .footer{
+        padding: 50px 0px;
+    }
+}

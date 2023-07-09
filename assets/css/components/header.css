@@ -5,6 +5,7 @@
     letter-spacing: 0.64px;
     position: relative;
     transition: color 0.4s;
+    cursor: pointer;
 }
 
 .nav__link:hover{
@@ -40,11 +41,21 @@
 }
 
 @media (max-width: 885px){
-    .reservation, .header__nav{
-        display: none;
-    }
-    
     .header__content{
         align-items: flex-start;
+    }
+
+    .nav__link:hover{
+        color: var(--black);
+    }
+    
+    .nav__link::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: var(--black);
+        transition: width 0.4s;
+        bottom: -5px;
     }
 }

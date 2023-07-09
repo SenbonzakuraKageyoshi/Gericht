@@ -1,0 +1,53 @@
+.menu__button, .close__button{
+    display: none;
+}
+
+.header__nav .nav__link:last-child{
+    display: none;
+}
+
+@media (max-width: 885px){
+    .close__button{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+    .close__button.active{
+        display: block;
+    }
+    
+    .menu__button{
+        display: block;
+    }
+
+    .reservation{
+        display: none;
+    }
+
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--gold);
+        width: 100%;
+        position: absolute;
+        top: -500px;
+        left: 0;
+        padding: 60px 0px;
+        transition: top 0.4s;
+    }
+
+    .header__nav.active{
+        top: 0;
+    }
+
+    .nav__link:not(:first-child){
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .header__nav .nav__link:last-child{
+        display: block;
+    }
+}
