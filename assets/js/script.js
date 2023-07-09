@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Анимации
 
     // Скролл по секциям
-    const anchorLinks = document.querySelectorAll('#anchor-link');
+    const anchorLinks = document.querySelectorAll('.anchor-link');
 
     const scrollToSection = (sectionName) => {
         document.querySelector(`.${sectionName}`).scrollIntoView({behavior: "smooth"});
